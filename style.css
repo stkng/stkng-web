@@ -1,0 +1,101 @@
+:root {
+    --max-width: 700px;
+    --color-primary: dodgerblue;
+    --color-text: #3b3b3b;
+    color: var(--color-text);
+    font-family: sans-serif;
+}
+
+header {
+    padding: 1rem;
+    display: grid;
+    place-content: center;
+}
+
+header img {
+    width: 6rem;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    outline: .25rem solid var(--color-text);
+    outline-offset: .25rem;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: var(--max-width);
+    align-items: stretch;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 2rem;
+    padding-top: 1rem;
+}
+
+svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+#small-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#small-logos svg {
+    fill: #ccc;
+    transition: fill ease-in-out 200ms;
+}
+
+#small-logos svg:hover {
+    fill: var(--color-text);
+}
+
+#small-logos span {
+    display: none;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#buttons a {
+    display: grid;
+    grid-template-columns: 2rem 1fr 2rem;
+    gap: .5rem;
+    align-items: center;
+    border: 2px solid var(--color-text);
+    border-radius: 1in;
+    padding: .75rem 1rem;
+    text-decoration: none;
+    transition: all ease-in-out 200ms;
+}
+
+#buttons a:hover {
+    border-color: var(--color-primary);
+}
+
+a:visited {
+    color: var(--color-text);
+}
+
+#buttons a span {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}

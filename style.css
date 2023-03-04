@@ -84,10 +84,12 @@ svg {
     padding: .75rem 1rem;
     text-decoration: none;
     transition: all ease-in-out 200ms;
+    color: var(--color-text);
 }
 
 #buttons a:hover {
     border-color: var(--color-primary);
+    color: var(--color-primary);
 }
 
 a:visited {

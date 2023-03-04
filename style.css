@@ -18,7 +18,7 @@ header img {
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
-    outline: .25rem solid var(--color-text);
+    /* outline: .25rem solid var(--color-text); safari doesn't like rounded borders and outlines */
     outline-offset: .25rem;
 }
 

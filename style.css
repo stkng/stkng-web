@@ -1,5 +1,5 @@
 :root {
-    --max-width: 700px;
+    --max-width: 500px;
     --color-primary: dodgerblue;
     --color-text: #3b3b3b;
     color: var(--color-text);
@@ -100,4 +100,11 @@ a:visited {
     text-align: center;
     font-size: 1rem;
     font-weight: bold;
+}
+
+#stkng-logo-label {
+    width: 7rem;
+    height: auto;
+    align-self: center;
+    fill: var(--color-text);
 }
